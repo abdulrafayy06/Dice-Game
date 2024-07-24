@@ -3,6 +3,7 @@
 let player1Name, player2Name;
 let player1Score = 0, player2Score = 0;
 let currentPlayer = 1;
+let pictures = ["dice1.png", "dice2.png", "dice3.png", "dice4.png", "dice5.png", "dice6.png"];
 
 
 //Start Game function
@@ -34,6 +35,9 @@ function rollDice() {
 
     // Generate a random number between 1 and 6
     let diceRoll = Math.floor(Math.random() * 6) + 1;
+
+    // Display the dice roll with the corresponding image
+    document.getElementById('diceImage').src = pictures[diceRoll - 1];
     document.getElementById('diceScore').innerText = `Dice Roll: ${diceRoll}`;
 
     if (diceRoll === 1) {
