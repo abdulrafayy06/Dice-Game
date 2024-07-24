@@ -65,6 +65,13 @@ button {
     cursor: pointer;
 }
 
+#diceImage {
+    border: #333 2px solid;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
 button:hover {
     background-color: #45a049;
 }
